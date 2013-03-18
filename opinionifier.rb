@@ -4,10 +4,8 @@ require './lib/lineCombiner/lineCombiner.rb'
 require 'punkt-segmenter'
 
 class Opinionifier
-
   def initialize
   end
-
 
   def get_justice_name(opinion_line)
     justice = opinion_line.first.gsub(/Opinion\sof\s|Statement\sof\s/, "").strip
@@ -196,7 +194,8 @@ class Opinionifier
     end
   end
 end
-$largest = [0, ""]
-o = Opinionifier.new()
-o.format_all_opinions()
-puts $largest
+
+# $largest = [0, ""]
+# o = Opinionifier.new()
+# o.format_all_opinions()
+# puts $largest
